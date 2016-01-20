@@ -16,10 +16,9 @@ try {
 }
 
 // welcome the user and let them know what's gonna happen
-log.info('Contentful Link Cleaner.\n\n')
+log.info('Contentful Link Cleaner\n')
 log.info('This tool will delete all the unresolved links in your published Entries.\n\n')
 
-/*
 inquirer.prompt([{
   type: 'confirm',
   name: 'publishing',
@@ -28,11 +27,9 @@ inquirer.prompt([{
            'Choose wisely, as there\'s no going back.\n',
   default: true
 }], function (answers) {
-*/
-  var answers = {}
   runLinkCleaner(usageParams, answers.publishing)
   .catch(function (err) {
     log.error('Failed with\n', err)
     process.exit(1)
   })
-//})
+})

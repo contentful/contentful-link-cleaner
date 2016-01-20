@@ -17,7 +17,7 @@ Check out the [releases](https://github.com/contentful/contentful-link-cleaner/r
 # Usage
 
 ```
-Usage: contentful-space-sync [options]
+Usage: contentful-link-cleaner [options]
 
 Options:
   --version                       Show version number

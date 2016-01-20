@@ -49,12 +49,12 @@ test('Find 3 links in 2 entries', t => {
 
   t.deepEqual(entryLinks[3].entryId, entries[1].sys.id, 'entry where fourth link was found')
   t.deepEqual(entryLinks[3].link, cloneDeep(entries[1].fields.tags.locale[0]), 'fourth link')
-  t.equals(entryLinks[3].path, 'tags.locale[0]', 'fourth link path')
+  t.equals(entryLinks[3].path, 'tags.locale', 'fourth link path')
   t.equals(entryLinks[3].type, 'Array', 'fourth link type')
 
   t.deepEqual(entryLinks[4].entryId, entries[1].sys.id, 'entry where fifth link was found')
   t.deepEqual(entryLinks[4].link, cloneDeep(entries[1].fields.tags.locale[1]), 'fifth link')
-  t.equals(entryLinks[4].path, 'tags.locale[1]', 'fifth link path')
+  t.equals(entryLinks[4].path, 'tags.locale', 'fifth link path')
   t.equals(entryLinks[4].type, 'Array', 'fifth link type')
 
   t.end()

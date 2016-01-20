@@ -23,6 +23,10 @@ test('Remove 3 missing links', t => {
         ]},
         field5: {en: [
           {sys: {id: 'link6', type: 'Link', linkType: 'Entry'}}
+        ]},
+        field6: {en: [
+          {sys: {id: 'link7', type: 'Link', linkType: 'Entry'}},
+          {sys: {id: 'link8', type: 'Link', linkType: 'Entry'}}
         ]}
       }
     }
@@ -50,13 +54,25 @@ test('Remove 3 missing links', t => {
     {
       entryId: entries[1].sys.id,
       link: {sys: {id: 'link4', type: 'Link', linkType: 'Entry'}},
-      path: 'field4.en[0]',
+      path: 'field4.en',
       type: 'Array'
     },
     {
       entryId: entries[1].sys.id,
       link: {sys: {id: 'link6', type: 'Link', linkType: 'Entry'}},
-      path: 'field5.en[0]',
+      path: 'field5.en',
+      type: 'Array'
+    },
+    {
+      entryId: entries[1].sys.id,
+      link: {sys: {id: 'link7', type: 'Link', linkType: 'Entry'}},
+      path: 'field6.en',
+      type: 'Array'
+    },
+    {
+      entryId: entries[1].sys.id,
+      link: {sys: {id: 'link8', type: 'Link', linkType: 'Entry'}},
+      path: 'field6.en',
       type: 'Array'
     }
   ]
@@ -67,6 +83,7 @@ test('Remove 3 missing links', t => {
   delete expectedEntries[1].fields.field3.en
   expectedEntries[1].fields.field4.en.splice(0, 1)
   delete expectedEntries[1].fields.field5
+  delete expectedEntries[1].fields.field6
 
   const modifiedEntries = removeMissingLinksFromEntries(missingLinks, cloneDeep(entries))
 

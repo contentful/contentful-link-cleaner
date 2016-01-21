@@ -6,6 +6,14 @@ When you have a link to an Entry or Asset on a Published Entry, if you delete th
 
 This tool goes through all of your entries, figures out which links don't exist anymore, and removes them.
 
+This might be particularly relevant to users of [contentful-space-sync](https://github.com/contentful/contentful-space-sync).
+
+If you're not entirely clear on what Links are, check out the [Links page](https://www.contentful.com/developers/docs/concepts/links/) for more information.
+
+This tool will ask you if the entries which have had their links fixed should also be published. This is the default, and we recommend that we do.
+
+Any entries that don't get their links fixed will stay in "updated" state and will need to be published manually.
+
 # Changelog
 
 Check out the [releases](https://github.com/contentful/contentful-link-cleaner/releases) page.

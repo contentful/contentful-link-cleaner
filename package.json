@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "bluebird": "^3.0.5",
-    "contentful-batch-libs": "^2.0.0",
+    "contentful-batch-libs": "^3.1.0",
     "inquirer": "^0.11.2",
     "lodash": "^3.10.1",
     "npmlog": "^2.0.0",

@@ -33,9 +33,6 @@ Options:
   --space                         ID of Space with source data
                                   [string] [required]
 
-  --destination-space             ID of Space data will be copied to
-                                  [string] [required]
-
   --delivery-token                Delivery API token
                                   [string] [required]
 

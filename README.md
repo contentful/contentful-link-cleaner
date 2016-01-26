@@ -1,5 +1,11 @@
 # Contentful Link Cleaner
 
+[![Travis](https://img.shields.io/travis/contentful/contentful-link-cleaner.svg)](https://travis-ci.org/contentful/contentful-link-cleaner)
+[![Dependency Status](https://david-dm.org/contentful/contentful-link-cleaner.svg)](https://david-dm.org/contentful/contentful-link-cleaner)
+[![devDependency Status](https://david-dm.org/contentful/contentful-link-cleaner/dev-status.svg)](https://david-dm.org/contentful/contentful-link-cleaner#info=devDependencies)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 This tool cleans up unresolved Entry links in Contentful spaces.
 
 When you have a link to an Entry or Asset on a Published Entry, if you delete the linked Entry the Entry that links to it will have a reference to a non existing entity.

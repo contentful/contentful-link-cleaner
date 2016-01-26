@@ -1,6 +1,6 @@
 # Contentful Link Cleaner
 
-[![npm](https://img.shields.io/npm/v/contentful-space-sync.svg)](https://www.npmjs.com/package/contentful-space-sync)
+[![npm](https://img.shields.io/npm/v/contentful-link-cleaner.svg)](https://www.npmjs.com/package/contentful-link-cleaner)
 [![Build Status](https://travis-ci.org/contentful/contentful-link-cleaner.svg?branch=master)](https://travis-ci.org/contentful/contentful-link-cleaner)
 [![Coverage Status](https://coveralls.io/repos/github/contentful/contentful-link-cleaner/badge.svg?branch=master)](https://coveralls.io/github/contentful/contentful-link-cleaner?branch=master)
 [![Dependency Status](https://david-dm.org/contentful/contentful-link-cleaner.svg)](https://david-dm.org/contentful/contentful-link-cleaner)

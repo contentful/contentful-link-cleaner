@@ -1,5 +1,5 @@
 {
   "space": "space id",
-  "eliveryToken": "space delivery token",
+  "deliveryToken": "space delivery token",
   "managementToken": "space management token"
 }

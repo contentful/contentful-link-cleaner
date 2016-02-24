@@ -10,7 +10,8 @@ test('Find 3 links in 2 entries', t => {
       fields: {
         name: {locale: 'name'},
         image: {locale: {sys: {id: '123', type: 'Link', linkType: 'Asset'}}},
-        article: {locale: {sys: {id: '456', type: 'Link', linkType: 'Entry'}}}
+        article: {locale: {sys: {id: '456', type: 'Link', linkType: 'Entry'}}},
+        malformedlink: {locale: {}}
       }
     },
     {

@@ -11,17 +11,27 @@
 
 This tool cleans up unresolved Entry links in Contentful spaces.
 
+If you're not entirely clear on what Links are, check out the [Links page](https://www.contentful.com/developers/docs/concepts/links/) for more information.
+
+## Why would you need this?
+
 When you have a link to an Entry or Asset on a Published Entry, if you delete the linked Entry the Entry that links to it will have a reference to a non existing entity.
 
 This tool goes through all of your entries, figures out which links don't exist anymore, and removes them.
 
-This might be particularly relevant to users of [contentful-space-sync](https://github.com/contentful/contentful-space-sync).
-
-If you're not entirely clear on what Links are, check out the [Links page](https://www.contentful.com/developers/docs/concepts/links/) for more information.
-
 This tool will ask you if the entries which have had their links fixed should also be published. This is the default, and we recommend that we do.
 
 Any entries that don't get their links fixed will stay in "updated" state and will need to be published manually.
+
+## If you're coming here from Contentful Space Sync
+
+This might be particularly relevant to users of [contentful-space-sync](https://github.com/contentful/contentful-space-sync).
+
+If you run the Space Sync tool, you might end up with an error log full of `UnresolvedLinks` errors.
+
+If that happens, you should run this link cleaner tool on your Source Space and let it fix the links for you.
+
+Afterwards, run the Space Sync tool again, with the sync token you got from the last time. Only the entries that were fixed by this tool will be synced now, and they will be properly republished on the destination space.
 
 # Changelog
 

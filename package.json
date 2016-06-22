@@ -1,5 +1,6 @@
 {
   "name": "contentful-link-cleaner",
+  "version": "1.0.0-determined-by-semantic-release",
   "description": "Cleans up unresolved Entry links in Contentful spaces",
   "bin": "bin/link-cleaner",
   "main": "index.js",
@@ -15,8 +16,10 @@
     "test:debug": "BABEL_ENV=test babel-node debug ./test/runner",
     "browser-coverage": "npm run test:cover && opener coverage/lcov-report/index.html",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "link-dev-deps": "mkdirp node_modules && ln -s ../../contentful-batch-libs/lib node_modules/contentful-batch-libs",
-    "unlink-dev-deps": "rimraf node_modules/contentful-batch-libs"
+    "devdep:build": "pushd ../contentful-batch-libs && npm run build && popd",
+    "devdep:clean": "pushd ../contentful-batch-libs && npm run clean && popd",
+    "devdep:install": "npm run devdep:build && rm -rf node_modules/contentful-batch-libs && npm install ../contentful-batch-libs && npm run devdep:clean",
+    "devdep:uninstall": "npm run devdep:clean && rimraf node_modules/contentful-batch-libs"
   },
   "dependencies": {
     "bluebird": "^3.0.5",

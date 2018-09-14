@@ -1,3 +1,5 @@
+# Deprecation notice
+this tool is deprecated and will be no longer maintaned, please refer to [link to entry](https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/search-parameters/links-to-entry/query-entries/console/curl)
 # Contentful Link Cleaner
 
 [![npm](https://img.shields.io/npm/v/contentful-link-cleaner.svg)](https://www.npmjs.com/package/contentful-link-cleaner)
